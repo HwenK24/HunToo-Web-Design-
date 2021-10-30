@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="default.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="default.js" type="text/javascript"></script>
+  <link href="recMain.css" rel="stylesheet" type="text/css" />
+  <title>HunToo - Book Recommendation</title>
+</head>
+
+<body>
+
+  <div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="MainPage.html">Main</a>
+      <a href="OurAdventure.html">Our Adventures</a>
+      <a href="GhostMuseum.html">Ghost Museum</a>
+      <a href="HauntedSpot.html">Haunted Spot</a>
+      <button class="accordion">Recommendation &nbsp;&#9660;</button>
+      <div class="panel">
+        <ul>
+          <li><a href="FilmMain.html">Films</a></li>
+          <li><a href="BookMain.html">Books</a></li>
+        </ul>
+      </div>
+      <div class="otherLinks">
+        <a href="Feedback.html">Feedback </a>
+        <a href="AboutUs.html">About Us </a>
+        <a href="ContactUs.html">Contact Us &#10017;</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </div>
+
+  <div id="main" class="topnav">
+    <div id="header">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <a href="MainPage.html"><img src="Image/logo.png" alt="Go To Main Page" title="Go to Main Page" style="width:40%;margin-left:25%" /></a>
+      <div class="searchBar">
+        <form action="searchRedirect.html">
+          <input type="text" placeholder="Search.." id="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <br /><hr />
+    <h2 id="title">Books</h2>
+    <hr />
+  </div>
+<!--Content-->
+<div class="content">
+  <div class="leftColumn">
+    <div class="poster1">
+      <a href="book1.html"><div class="blackOverlay">13 Moons</div></a>
+      <img src="image/book1.png" alt="13 Moons poster"/>
+      
+    </div>
+    <div class="poster3">
+      <a href="book3.html"><div class="blackOverlay">The Ghost Bride</div></a>
+      <img src="image/book3.jpg" alt="The Ghost Bride poster"/>
+      
+    </div>
+    
+  </div>
+  
+  <div class="rightColumn">
+    <div class="poster2">
+      <a href="book2.html"><div class="blackOverlay">Horror Stories</div></a>
+      <img src="image/book2.png" alt="Horror Stories poster"/>
+      
+    </div>
+  
+    <div class="poster4">
+      <a href="book4.html"><div class="blackOverlay">Dark Demon Rising</div></a>
+      <img src="image/book4.jpg" alt="Dark Demon Rising poster"/>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!--Content-->
+
+  <footer id="social_icons">&nbsp;&nbsp;Follow Us&nbsp;
+    <a href="#" class="fa fa-facebook"></a>&nbsp;
+    <a href="#" class="fa fa-twitter"></a>&nbsp;
+    <a href="#" class="fa fa-instagram"></a>&nbsp;
+    <a href="#" class="fa fa-youtube"></a>&nbsp;
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="default.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="default.js" type="text/javascript"></script>
+  <script src="readMore.js" type="text/javascript"></script>
+  <link href="aboutUs.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+  <title>HunToo - About Us</title>
+</head>
+
+<body>
+
+  <div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="MainPage.html">Main</a>
+      <a href="OurAdventure.html">Our Adventures</a>
+      <a href="GhostMuseum.html">Ghost Museum</a>
+      <a href="HauntedSpot.html">Haunted Spot</a>
+      <button class="accordion">Recommendation &nbsp;&#9660;</button>
+      <div class="panel">
+        <ul>
+          <li><a href="FilmMain.html">Films</a></li>
+          <li><a href="BookMain.html">Books</a></li>
+        </ul>
+      </div>
+      <div class="otherLinks">
+        <a href="Feedback.html">Feedback </a>
+        <a href="AboutUs.html">About Us </a>
+        <a href="ContactUs.html">Contact Us &#10017;</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </div>
+
+  <div id="main" class="topnav">
+    <div id="header">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <a href="MainPage.html"><img src="Image/logo.png" alt="Go To Main Page" title="Go to Main Page" style="width:40%;margin-left:25%" /></a>
+      <div class="searchBar">
+        <form action="searchRedirect.html">
+          <input type="text" placeholder="Search.." id="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <br /><hr />
+    <h2 id="title">About Us</h2>
+    <hr />
+  </div>
+  <!--Content-->
+  <div class="content">
+    <div id="upper">
+        <p> We go around Malaysia's haunted spots to ghost hunt and to find out the truth behind these happenings. We make videos to share our 
+            experiences to you, give scientific and logical explanation on supernatural occurrence and also share our thoughts 
+            on paranormal horror films, books and games so you can easily know more about supernatural things. Enjoy your stay here, if you are spooked,
+            it's our pleasure. :)</p>
+        <p>P.s. Do remember to be respectful and set boundaries when it comes to ghost hunting to not invade and offend the supernatural beings. </p>
+
+      </div>
+    <div class="lower">
+        <div class="image">
+          <img src="image/photo1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="image">
+          <img src="image/photo2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="image">
+          <img src="image/photo3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+      </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <img src="image/photo1.jpeg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <img src="image/photo2.jpeg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <img src="image/photo3.jpeg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+    </div>
+  </div>
+  </div>
+  <!--Content-->
+  <footer id="social_icons">&nbsp;&nbsp;Follow Us&nbsp;
+    <a href="#" class="fa fa-facebook"></a>&nbsp;
+    <a href="#" class="fa fa-twitter"></a>&nbsp;
+    <a href="#" class="fa fa-instagram"></a>&nbsp;
+    <a href="#" class="fa fa-youtube"></a>&nbsp;
+  </footer>
+
+
+</body>
+
+</html>

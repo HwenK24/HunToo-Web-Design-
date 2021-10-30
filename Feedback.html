@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="default.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="default.js" type="text/javascript"></script>
+  <script src="readMore.js" type="text/javascript"></script>
+  <link href="form.css" rel="stylesheet" type="text/css" />
+  <title>HunToo - Feedback</title>
+<script>
+  function checkForm(){
+    name_ok=true;
+    email_ok=true;
+    rating_ok=false;
+    
+    if (feedback.name.value=="")name_ok=false;
+    if (feedback.email.value=="")email_ok=false;
+    
+    r = feedback["rate"];
+    for (i=0; i<r.length;i++){
+        if (feedback.rate[i].checked)rating_ok = true;
+    }
+    
+    if(name_ok==false) alert("Please fill in your name.");
+    if(email_ok==false) alert("Please fill in your email.");
+    if(rating_ok==false) alert("Please rate our website.");
+    form_ok=(name_ok&&email_ok&&rating_ok);
+    return form_ok;
+  }
+</script>
+  
+</head>
+
+<body>
+
+  <div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="MainPage.html">Main</a>
+      <a href="OurAdventure.html">Our Adventures</a>
+      <a href="GhostMuseum.html">Ghost Museum</a>
+      <a href="HauntedSpot.html">Haunted Spot</a>
+      <button class="accordion">Recommendation &nbsp;&#9660;</button>
+      <div class="panel">
+        <ul>
+          <li><a href="FilmMain.html">Films</a></li>
+          <li><a href="BookMain.html">Books</a></li>
+        </ul>
+      </div>
+      <div class="otherLinks">
+        <a href="Feedback.html">Feedback </a>
+        <a href="AboutUs.html">About Us </a>
+        <a href="ContactUs.html">Contact Us &#10017;</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </div>
+
+  <div id="main" class="topnav">
+    <div id="header">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <a href="MainPage.html"><img src="Image/logo.png" alt="Go To Main Page" title="Go to Main Page" style="width:40%;margin-left:25%" /></a>
+      <div class="searchBar">
+        <form action="searchRedirect.html">
+          <input type="text" placeholder="Search.." id="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <br /><hr />
+    <h2 id="title">Feedback</h2>
+    <hr />
+  </div>
+  <!--Content-->
+  <div class="content">
+      <blockquote>We would like to hear your thoughts and advices on our website for us to improve and make it better.
+          <br />Please fill in the form below.
+      </blockquote>
+
+      <form id="feedback" action="formRedirect.html" method="post" onsubmit="return checkForm()">
+          <fieldset id="details">
+            <label for="name" >Name *</label>
+            <br/>
+            <input type="text"  id = "name" name = "name" maxlength="50" value=""/>
+            <br/>
+            <br/>
+            <label for="email" >Email *</label>
+            <br/>
+            <input type="text"  id = "email" name="email" maxlength="50"/>
+            <br/>
+            <br/>
+            <label for="msg" >Message</label>
+            <br/>
+            <textarea  name="msg" id="msg" cols="50" rows="6"></textarea>
+            <br/>
+            <br/>
+          </fieldset>
+
+          <fieldset id="rating" value="">
+            <label for="rate">Rate our website (5 as best) *</label>
+            <br />
+            <input type="radio" id = "r1" name="rate" />
+            <label for ="rate">1</label>
+            <input type="radio" id = "r2" name="rate" />
+            <label for ="rate">2</label>
+            <input type="radio" id = "r3" name="rate" />
+            <label for ="rate">3</label>
+            <input type="radio" id = "r4" name="rate" />
+            <label for ="rate">4</label>
+            <input type="radio" id = "r5" name="rate" />
+            <label for ="rate">5  </label>
+          </fieldset>
+          
+          <fieldset>
+            <label for="know" class= >Know our website through</label>
+            <br/>
+              <select id="know" name="know"  onchange='otherOption(this.value)'>
+                  <option value="P">Pick an option</option>
+                  <option value="YT">YouTube</option>
+                  <option value="TW" >Twitter</option>
+                  <option value="FB">Facebook</option>
+                  <option value="IG">Instagram</option>
+                  <option value="OS">Organic Search</option>
+                  <option value="OT" >Others</option>
+                  
+              </select>
+              <br /><br />
+              <p id="othersP" style="display:none">Please specify your other answer.&nbsp;</p>
+              <input type="text"  id = "others" name="others" maxlength="20" style="display:none"/>  
+              <br/>
+              <br/>
+            Please tick the elements that you like in our website. 
+            <br/>
+            <label id="checkBox" name="checkBox" >
+              <input type="checkbox" id="im"/>
+              <label for="im">Images<br /></label>
+              <input type="checkbox" id="ly"/>
+              <label for="ly">Layout<br /></label>
+              <input type="checkbox" id="cl"/>
+              <label for="cl">Colours<br /></label>
+              <input type="checkbox" id="tx"/>
+              <label for="tx">Text<br /></label>
+              <input type="checkbox" id="rc"/>
+              <label for="rc">Recommendations<br /></label>
+
+           </label>
+            
+        </fieldset>  
+          <fieldset id="buttons">
+            <input class="btn" type="submit" value="Submit"/>
+            <input class="btn" id="res" type="reset" value="Reset" method="post"/>
+         </fieldset>
+      </form>
+
+  </div>
+  <!--Content-->
+  <footer id="social_icons">&nbsp;&nbsp;Follow Us&nbsp;
+    <a href="#" class="fa fa-facebook"></a>&nbsp;
+    <a href="#" class="fa fa-twitter"></a>&nbsp;
+    <a href="#" class="fa fa-instagram"></a>&nbsp;
+    <a href="#" class="fa fa-youtube"></a>&nbsp;
+  </footer>
+  <script>
+    function otherOption(val){
+      if(val=='OT'){
+        others.style.display='inline';
+        othersP.style.display='inline';
+      }
+        
+      else  {
+        others.style.display='none';
+        othersP.style.display='none';
+      }
+        
+    }
+  </script>
+
+</body>
+
+</html>

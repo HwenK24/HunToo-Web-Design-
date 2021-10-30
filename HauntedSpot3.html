@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink--fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="HuantedSpot.css" rel="stylesheet" type="text/css" />
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <script src="default.js" type="text/javascript"></script>
+    <title>Haunted Spot - First World Hotel, Genting Highlands, Pahang</title>
+</head>
+
+<body>
+
+    <div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="MainPage.html">Main</a>
+            <a href="OurAdventure.html">Our Adventures</a>
+            <a href="GhostMuseum.html">Ghost Museum</a>
+            <a href="HauntedSpot.html">Haunted Spot</a>
+            <button class="accordion">Recommendation &nbsp;&#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li><a href="FilmMain.html">Films</a></li>
+                    <li><a href="BookMain.html">Books</a></li>
+                </ul>
+            </div>
+            <div class="otherLinks">
+                <a href="Feedback.html">Feedback </a>
+                <a href="AboutUs.html">About Us </a>
+                <a href="ContactUs.html">Contact Us &#10017;</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </div>
+
+    <div id="main" class="topnav">
+        <div id="header">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a href="MainPage.html"><img src="Image/logo.png" alt="Go To Main Page" title="Go to Main Page"
+                    style="width:40%;margin-left:25%" /></a>
+            <div class="searchBar">
+                <form action="SearchRedirect.html">
+                    <input type="text" placeholder="Search.." id="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <br />
+        <hr />
+        <h2 id="title">Haunted Spot</h2>
+        <hr />
+    </div>
+
+    <div id="content">
+        <div id="head">
+            <img src="Image/FirstWorldHotel,GentingHighlands,Pahang.jpg"
+                alt="First World Hotel, Genting Highlands, Pahang">
+            <p>
+                <h3>
+                    First World Hotel, Genting Highlands, Pahang
+                    <span>
+                        &#128128;&#128128;<span
+                            style="color: transparent; text-shadow: 0 0 0 rgb(175, 52, 52);">&#128128;&#128128;&#128128;</span>
+                    </span>
+                </h3>
+                This resort hotel is said to be haunted by the ghosts of suicide victims who lost everything at the
+                casino.
+                Children cry and refuse to go near parts of the hotel. Healthy guests fall ill for no apparent reason.
+                You can smell incense, which the Chinese believe is food for ghosts.
+                Some of the 6118 rooms are said to be cursed and the hotel never rents them out to guests,
+                even when the hotel is at full occupancy. The entire 21st floor is said to be cursed,
+                and the elevator always skips that floor, for some reason.
+            </p>
+        </div>
+        <div id="map">
+            <img src="Image/Map.jpg" usemap="#image-map">
+
+            <map name="image-map">
+                <area target="_self" alt="Ghost Hill, Penang" title="Ghost Hill, Penang" href="HauntedSpot1.html"
+                    coords="80,120,110,150" shape="rect">
+                <area target="_self" alt="Tambun Inn, Ipoh" title="Tambun Inn, Ipoh" href="HauntedSpot2.html"
+                    coords="142,207,175,240" shape="rect">
+                <area target="_self" alt="First World Hotel, Genting Highlands, Pahang"
+                    title="First World Hotel, Genting Highlands, Pahang" href="HauntedSpot3.html"
+                    coords="247,317,215,284" shape="rect">
+                <area target="_self" alt="Sandakan Memorial Park, Sabah" title="Sandakan Memorial Park, Sabah"
+                    href="HauntedSpot4.html" coords="893,59,924,92" shape="rect">
+            </map>
+        </div>
+    </div>
+
+    <div class="push"></div>
+
+    <footer id="social_icons">&nbsp;&nbsp;Follow Us&nbsp;
+        <a href="#" class="fa fa-facebook"></a>&nbsp;
+        <a href="#" class="fa fa-twitter"></a>&nbsp;
+        <a href="#" class="fa fa-instagram"></a>&nbsp;
+        <a href="#" class="fa fa-youtube"></a>&nbsp;
+    </footer>
+
+
+</body>
+
+</html>

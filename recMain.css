@@ -1,0 +1,46 @@
+.content{
+    margin:30px;
+    text-align:center;
+    position:absolute;
+}
+.content img{
+    width:100%;
+    height:55vw;
+    margin-bottom:40px;
+}
+
+
+.leftColumn{
+    width:45%;
+    float:left;
+    margin:20px;
+    position:relative;
+}
+.rightColumn{
+    width:45%;
+    float:left;
+    margin:20px;
+    margin-top:200px;
+    position:relative;
+}
+
+.blackOverlay{
+    position:absolute;
+    width:100%;
+    height:55vw;
+    background-color: black;
+    opacity:0%;
+    color:white;
+    line-height:55vw;
+    font-size:50px;
+}
+
+.blackOverlay:hover{
+    opacity:75%;
+    box-shadow: 0 10px 20px 0 red, 0 10px 20px 0 red;
+    text-shadow: 0 0 10px #FF0000;
+    transition:0.5s;
+}
+
+
+

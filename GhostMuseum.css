@@ -1,0 +1,73 @@
+body {
+  background-image: url('Image/GhostMuseumBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: 75% 50%;
+  background-size:contain; 
+}
+
+#links {
+    font-size: 28px;
+    border: 1px hidden; 
+    padding-left: 20px;
+    margin-bottom: 100px;
+    background: none;
+}
+
+#links a:link {
+    color: rgb(197, 197, 82);
+}
+
+#links a:visited {
+    color: rgb(197, 197, 82);
+}
+
+#links a:hover {
+    color: snow;}
+
+#content {
+    color: white;
+}
+
+#content h3 {
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+p.text {
+    display: block;
+    position: relative;
+    right: 20px;
+    margin-right: 5px;
+
+}
+
+h3.alphabet {
+    border: 1px hidden; 
+    padding-left: 20px;
+}
+
+dt.name {
+    border: 1px hidden; 
+    padding-left: 20px;
+    margin-top: 50px;
+
+}
+
+dd img {
+    width:250px;
+    height:280px;
+    float: right;
+    clear: right;
+    border: 1px hidden;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+dd {
+    margin-bottom: 180px;
+}
+
+#objective {
+    margin-bottom: 100px;
+}

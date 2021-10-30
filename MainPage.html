@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink--fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="MainPage.css" rel="stylesheet" type="text/css" />
+  <link href="default.css" rel="stylesheet" type="text/css" />
+  <script src="default.js" type="text/javascript"></script>
+  <script src='http://use.edgefonts.net/eater.js'></script>
+  <title>Huntoo - Main Page</title>
+</head>
+
+<body>
+
+  <audio  autoplay>
+    <source src="MainPageBGM.mp3" type="audio/mpeg">
+  </audio>
+
+  <div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="MainPage.html">Main</a>
+      <a href="OurAdventure.html">Our Adventures</a>
+      <a href="GhostMuseum.html">Ghost Museum</a>
+      <a href="HauntedSpot.html">Haunted Spot</a>
+      <button class="accordion">Recommendation &nbsp;&#9660;</button>
+      <div class="panel">
+        <ul>
+          <li><a href="FilmMain.html">Films</a></li>
+          <li><a href="BookMain.html">Books</a></li>
+        </ul>
+      </div>
+      <div class="otherLinks">
+        <a href="Feedback.html">Feedback </a>
+        <a href="AboutUs.html">About Us </a>
+        <a href="ContactUs.html">Contact Us &#10017;</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </div>
+
+  <div id="main" class="topnav">
+    <div id="header">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <a href="MainPage.html"><img src="Image/logo.png" alt="Go To Main Page" title="Go to Main Page"
+          style="width:40%;margin-left:25%" /></a>
+      <div class="searchBar">
+        <form action="SearchRedirect.html">
+          <input type="text" placeholder="Search.." id="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <h2 id="title" >Notice Board</h2>
+    <hr />
+  </div>
+
+  <div id="content">
+
+    <h2 id="declaration">
+      This website is only for entertainment purposes. Do not attempt to recreate any of the acts in this website, as
+      they
+      may be dangerous if not done correctly, and could result in serious injury. If you rely on the information
+      portrayed in this video, you assume the responsibility for the results. Have fun, but always think ahead, and
+      remember that every project you try is at <div id="important">YOUR OWN RISK</div>.
+    </h2>
+
+    <div id="board">
+      <p id="left">
+        <span><span style="text-decoration: underline; color: rgb(5, 94, 34);">What's New</span>
+          <a class="update" href="OurAdventure.html">2020.04.07 [Our Adventures] New Video Release &mdash; Mysterious
+            Dark Shadow and
+            EVP of a Stern Voice Command.</a> <br />
+          <a class="update" href="GhostMuseum.html#H">2020.04.15 [Ghost Museum] Ghostpedia Update &mdash; Hungry
+            Ghost</a> <br />
+          <a class="update" href="OurAdventure.html">2020.04.07 [Our Adventures] New Video Release &mdash; Paranormal
+            activity</a>
+          <br />
+          <a class="update" href="movie1.html">2020.04.01 [Films] Movie Recommendation &mdash; Munafik</a> <br />
+          <a class="update" href="HauntedSpot4.html">2020.03.28 [Haunted Spot] Danger Zone &mdash; Sandakan Memorial
+            Park, Sabah</a>
+          <br />
+          <a class="update" href="book4.html">2020.03.17 [Books] Book Review &mdash; Dark Demon Rising</a> <br />
+          <a class="update" href="GhostMuseum.html#P">2020.03.07 [Ghost Museum] Ghostpedia Update &mdash; Pocong </a>
+          <br />
+        </span>
+      </p>
+      <p id="right"><span style="font-family: Eater; font-size: x-large;">&mdash; We research the unknown with respect and kindness, and touch souls with love and
+          humility.</span></p>
+    </div>
+
+    <address style="float: right;clear: right;margin: 20px;">&copy; All rights reserved</address>
+  </div>
+
+
+  <div class="push"></div>
+
+  <footer id="social_icons">&nbsp;&nbsp;Follow Us&nbsp;
+    <a href="#" class="fa fa-facebook"></a>&nbsp;
+    <a href="#" class="fa fa-twitter"></a>&nbsp;
+    <a href="#" class="fa fa-instagram"></a>&nbsp;
+    <a href="#" class="fa fa-youtube"></a>&nbsp;
+  </footer>
+
+
+</body>
+
+</html>

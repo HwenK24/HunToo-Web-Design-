@@ -1,0 +1,116 @@
+body {
+  background-image: url('Image/OurAdventureBackground2.jpg');
+  background-repeat: no-repeat;
+  background-size: 75% 50%;
+}
+
+#content {
+    color: white;
+}
+#right {
+    width: 30%;
+    float: right;
+    clear: right;
+    padding: 40px;
+}
+
+#left {
+  width: 60%;
+  float: left;
+  clear: left;
+  padding: 20px;
+}
+
+#left img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red;
+  float: left;
+  clear: left;
+  margin: 20px;
+}
+
+
+table,th,td
+{
+  border:2px solid white;
+}
+table
+{
+  width:100%;
+  background-color: rgb(228, 182, 182);
+  box-shadow: 10px -10px 5px rgb(117, 37, 37);
+}
+tr {
+ 
+}
+td
+{
+  height:40px;
+  color:maroon;
+  font-weight:bold;
+}
+th
+{
+  background-color:#eee;
+  color:#B87333 ;
+}
+tr:hover
+{
+  background-color: #FFA500;
+}
+
+tfoot td {
+  background-color:#eee;
+  text-align: right; 
+  vertical-align: bottom;
+}
+
+#head {
+  border: 1px hidden;
+  padding-bottom: 80px;
+}
+
+.video-responsivem, iframe, p {
+  overflow: hidden;
+  height: 200px;
+  border: 1px hidden;
+  padding-bottom: 100px;
+}
+
+.video-responsive iframe {
+  float: left;
+  clear: left;
+  height: 200px;
+  width: 50%;
+  padding-right: 20px;
+
+}
+
+#circlelogo {
+  transition: 1s ease-in-out;
+}
+
+#circlelogo:hover {
+  transform: rotateZ(360deg);
+}
+
+.pagination {
+  display: block;
+  clear: both;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pagination a {
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+
+

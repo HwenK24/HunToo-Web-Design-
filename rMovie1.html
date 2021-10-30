@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="default.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="default.js" type="text/javascript"></script>
+  <script src="readMore.js" type="text/javascript"></script>
+  <link href="recDetails.css" rel="stylesheet" type="text/css" />
+  <title>Munafik Review</title>
+</head>
+
+<body>
+
+  <div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="MainPage.html">Main</a>
+      <a href="OurAdventure.html">Our Adventures</a>
+      <a href="GhostMuseum.html">Ghost Museum</a>
+      <a href="HauntedSpot.html">Haunted Spot</a>
+      <button class="accordion">Recommendation &nbsp;&#9660;</button>
+      <div class="panel">
+        <ul>
+          <li><a href="FilmMain.html">Films</a></li>
+          <li><a href="BookMain.html">Books</a></li>
+        </ul>
+      </div>
+      <div class="otherLinks">
+        <a href="Feedback.html">Feedback </a>
+        <a href="AboutUs.html">About Us </a>
+        <a href="ContactUs.html">Contact Us &#10017;</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </div>
+
+  <div id="main" class="topnav">
+    <div id="header">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <a href="MainPage.html"><img src="Image/logo.png" alt="Go To Main Page" title="Go to Main Page" style="width:40%;margin-left:25%" /></a>
+      <div class="searchBar">
+        <form action="searchRedirect.html">
+          <input type="text" placeholder="Search.." id="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <br /><hr />
+  </div>
+  <!--Content-->
+  <div class="content">
+    <div class="upper" id="upper" style="background-image: url(image/movie1a.jpg);">
+      <div class="nextPage">
+        <a href="movie1.html" >OVERVIEW</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"  id="review">REVIEW</a>
+      </div>
+      <h1>Review</h1>
+      <ol>
+        <li>Munafik mempunyai jalan cerita yang menarik dan seram juga. Yang paling bestnya adalah plot "twist" di babak klimaks. Filem ini adalah arahan oleh Syamsul Yusof dan dia juga memainkan watak protagonis dalam filem ini. Nampaknya filem ini menaikkan taraf genre seram dalam industri filem negara Malaysia.</li>
+        <br />
+        <li>Don't waste your time. Storyline is crap. It's not one of those great Asian horror shows.</li>
+        <br />
+        <li>Munafik is the <span id="dots">...</span><span id="more">best horror film i ever seen. Syamsul Yusof is the best actor i ever seen in my life. I also like horror movies like The Conjuring, Annabelle 2, IT (2017) and Insidious.</span></li>
+        <br />
+        <span id="dots2" style="color:rgb(0,0,0,0)">...</span><span id="moreMore">
+        <li>Currently Malaysian director tend to make horror movie so much that some of it are not worth the watch. However for this movie it was an A++ will be given.
+            Why?? Because it seems that there are some scene in the movie that are not very typical with other Malay horror movie. And I would called it brave due to the director tend to make a scene which some of us may consider it as taboo and the actor seems so deep into the character when acting on "the brave set".
+            If you wander what are the brave set is you may try to take a look at the movie. Local Malaysian will understand what are "the brave set" I mention previously</li>
+            <br />
+          </span>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+      </ol>
+     
+    </div>
+  
+    <div class="lower">
+      <h3>Similar</h3>
+      <div id="poster1">
+        <a href="movie2.html"><img src="image/movie2.jpg" alt="Haunted Road 2"/></a>
+      </div>
+  
+      <div id="poster2">
+        <a href="movie3.html"><img src="image/movie3.jpg" alt="Revenge of Pontianak"/></a>
+      </div>
+      <div id="poster3">
+        <a href="movie5.html"><img src="image/movie5.jpg" alt="Munafik 2"/></a>
+      </div>
+      <div id="poster4">
+        <a href="movie4.html"><img src="image/movie4.jpg" alt="Hantu Kak Limah"/></a>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!--Content-->
+  <footer id="social_icons">&nbsp;&nbsp;Follow Us&nbsp;
+    <a href="#" class="fa fa-facebook"></a>&nbsp;
+    <a href="#" class="fa fa-twitter"></a>&nbsp;
+    <a href="#" class="fa fa-instagram"></a>&nbsp;
+    <a href="#" class="fa fa-youtube"></a>&nbsp;
+  </footer>
+
+
+</body>
+
+</html>

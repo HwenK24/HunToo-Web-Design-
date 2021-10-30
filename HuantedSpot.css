@@ -1,0 +1,28 @@
+body {
+  background-image: url('Image/HauntedSpotBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white
+}
+
+#content {
+    color: white;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+#head img {
+    height: 200px;
+    width: 300px;
+    float: left;
+    clear: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+#map {
+    text-align: center;
+    padding-top: 150px;
+    opacity: 0.85;
+}
